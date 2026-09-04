@@ -1,0 +1,41 @@
+<html>
+    <button type="button" id="first_button">First Button</button>
+    <button type="button" id="second_button">Second Button</button>
+
+    <script>
+        // outer function
+        const createClickCounter = () => {
+            let count = 0;
+
+            // inner function
+            const clickCounter = event => {
+                count++;
+                console.log(event.currentTarget.id + " count is " + count);
+            }
+
+            return clickCounter;
+        }
+
+        document.querySelector("#first_button")
+            .addEventListener("click", createClickCounter());
+
+        document.querySelector("#second_button")
+            .addEventListener("click", createClickCounter());
+    </script>
+
+    <script>
+        const item = {
+            rate: 0.075,
+
+            calc(subtotal) {
+                return (subtotal + subtotal * this.rate).toFixed(2);
+            },
+
+            displayFullPrice(event, subtotal) {
+                console.log(
+                    `Full price for ${event.currentTarget.id} = ${this.calc(subtotal)}`
+                );
+            }
+        };
+    </script>
+</html>
