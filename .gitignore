@@ -1,0 +1,3 @@
+# Files containing MongoDB credentials
+.env
+Unit04_Exercise/films_app_zds.js
