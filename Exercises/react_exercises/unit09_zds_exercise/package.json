@@ -1,0 +1,22 @@
+{
+  "name": "unit09_zds_exercise",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rsbuild build",
+    "dev": "rsbuild",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "react": "^19.3.1",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^2.2.14",
+    "@rsbuild/plugin-react": "^2.1.1"
+  }
+}
